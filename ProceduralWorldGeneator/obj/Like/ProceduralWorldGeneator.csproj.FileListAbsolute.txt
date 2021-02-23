@@ -1,0 +1,10 @@
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\bin\Like\ProceduralWorldGeneator.exe.config
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\bin\Like\ProceduralWorldGeneator.exe
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\bin\Like\ProceduralWorldGeneator.pdb
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Like\ProceduralWorldGeneator.csprojAssemblyReference.cache
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Like\ProceduralWorldGeneator.Form1.resources
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Like\ProceduralWorldGeneator.Properties.Resources.resources
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Like\ProceduralWorldGeneator.csproj.GenerateResource.cache
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Like\ProceduralWorldGeneator.csproj.CoreCompileInputs.cache
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Like\ProceduralWorldGeneator.exe
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Like\ProceduralWorldGeneator.pdb

@@ -1,0 +1,13 @@
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\bin\Debug\ProceduralWorldGeneator.exe.config
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\bin\Debug\ProceduralWorldGeneator.exe
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\bin\Debug\ProceduralWorldGeneator.pdb
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Debug\ProceduralWorldGeneator.csprojAssemblyReference.cache
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Debug\ProceduralWorldGeneator.Form1.resources
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Debug\ProceduralWorldGeneator.Properties.Resources.resources
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Debug\ProceduralWorldGeneator.csproj.GenerateResource.cache
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Debug\ProceduralWorldGeneator.csproj.CoreCompileInputs.cache
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Debug\ProceduralWorldGeneator.exe
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Debug\ProceduralWorldGeneator.pdb
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\bin\Debug\StackBlur.dll
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\bin\Debug\System.Drawing.Common.dll
+D:\проекты в резюме\ProceduralWorldGeneator\ProceduralWorldGeneator\obj\Debug\ProceduralWorldGeneator.csproj.CopyComplete
