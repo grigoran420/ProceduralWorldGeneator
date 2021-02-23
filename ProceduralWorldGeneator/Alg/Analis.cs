@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
+﻿using System.Drawing;
 
 namespace ProceduralWorldGeneator.Alg
 {
@@ -14,7 +9,7 @@ namespace ProceduralWorldGeneator.Alg
 
         }
         
-        internal double average(Bitmap map)
+        internal double Average(Bitmap map)
         {
             double Aver = 0;
             for (int y = 0; y < map.Height; y++)
@@ -28,7 +23,7 @@ namespace ProceduralWorldGeneator.Alg
             return Aver;
         }
             
-        internal int min (Bitmap map)
+        internal int Min (Bitmap map)
         {
             int min = 256;
             for (int y = 0; y < map.Height; y++)
@@ -41,7 +36,7 @@ namespace ProceduralWorldGeneator.Alg
             return min;
         }
         
-        internal int max (Bitmap map)
+        internal int Max (Bitmap map)
         {
             int max = -1;
             for (int y = 0; y < map.Height; y++)
