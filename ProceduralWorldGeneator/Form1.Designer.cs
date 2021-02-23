@@ -36,6 +36,8 @@ namespace ProceduralWorldGeneator
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.DisplacementMap)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +64,7 @@ namespace ProceduralWorldGeneator
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(828, 69);
+            this.button2.Location = new System.Drawing.Point(828, 101);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 34);
             this.button2.TabIndex = 8;
@@ -73,7 +75,7 @@ namespace ProceduralWorldGeneator
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(828, 109);
+            this.button1.Location = new System.Drawing.Point(828, 141);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 32);
             this.button1.TabIndex = 9;
@@ -84,7 +86,7 @@ namespace ProceduralWorldGeneator
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(828, 147);
+            this.button3.Location = new System.Drawing.Point(828, 179);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(121, 32);
             this.button3.TabIndex = 10;
@@ -95,7 +97,7 @@ namespace ProceduralWorldGeneator
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(828, 185);
+            this.button4.Location = new System.Drawing.Point(828, 217);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(121, 32);
             this.button4.TabIndex = 11;
@@ -106,10 +108,30 @@ namespace ProceduralWorldGeneator
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(828, 223);
+            this.listBox1.Location = new System.Drawing.Point(828, 288);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(134, 589);
+            this.listBox1.Size = new System.Drawing.Size(134, 524);
             this.listBox1.TabIndex = 12;
+            // 
+            // button5
+            // 
+            this.button5.Enabled = false;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button5.Location = new System.Drawing.Point(828, 256);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(121, 25);
+            this.button5.TabIndex = 13;
+            this.button5.Text = "sum";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(828, 72);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(120, 20);
+            this.textBox1.TabIndex = 14;
+            this.textBox1.Text = "80";
             // 
             // Form1
             // 
@@ -117,6 +139,8 @@ namespace ProceduralWorldGeneator
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
             this.ClientSize = new System.Drawing.Size(975, 826);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -128,6 +152,7 @@ namespace ProceduralWorldGeneator
             this.Text = "ProceduralWorldGenerator";
             ((System.ComponentModel.ISupportInitialize)(this.DisplacementMap)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -140,6 +165,8 @@ namespace ProceduralWorldGeneator
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

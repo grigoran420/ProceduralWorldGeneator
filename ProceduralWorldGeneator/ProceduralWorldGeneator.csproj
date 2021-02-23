@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alg\Addition.cs" />
     <Compile Include="Alg\algGenerate.cs" />
     <Compile Include="Alg\Analis.cs" />
     <Compile Include="Alg\Coloring.cs" />

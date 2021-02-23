@@ -23,7 +23,7 @@ namespace ProceduralWorldGeneator
         {
             listBox1.Items.Clear();
             AlgGenerate algGenerate = new AlgGenerate();
-            map = algGenerate.Generate();
+            map = algGenerate.Generate(Int32.Parse(textBox1.Text));
             DisplacementMap.Image = map;
         }
 
@@ -64,6 +64,15 @@ namespace ProceduralWorldGeneator
             listBox1.Items.Add($"Max = {analysis.max(map)}");
             listBox1.Items.Add($"Min = {analysis.min(map)}");
             listBox1.Items.Add("");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Bitmap SumMap = map;
+            Addition addition = new Addition();
+            AlgGenerate algGenerate = new AlgGenerate();
+            map = addition.Add(map, algGenerate.Generate(Int32.Parse(textBox1.Text)));
+            DisplacementMap.Image = map;
         }
     }
 }
