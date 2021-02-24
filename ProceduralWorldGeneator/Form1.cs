@@ -8,6 +8,7 @@ namespace ProceduralWorldGeneator
     public partial class Form1 : Form
     {
         Bitmap map;
+        byte algIndex = 0;
         public Form1()
         {
             InitializeComponent();
@@ -16,9 +17,21 @@ namespace ProceduralWorldGeneator
         internal void Generate_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            AlgGenerate algGenerate = new AlgGenerate();
-            map = algGenerate.Generate(Int32.Parse(textBox1.Text));
-            DisplacementMap.Image = map;
+            switch (algIndex)
+            {
+                case 0:
+                    AlgRandom algGenerate = new AlgRandom();
+                    map = algGenerate.Generate(Int32.Parse(textBox1.Text));
+                    DisplacementMap.Image = map;
+                    break;
+                case 1:
+                    AlgPerlin perlin = new AlgPerlin();
+                    map = perlin.Generate(Int32.Parse(textBox1.Text), Int32.Parse(textBox1.Text));
+                    DisplacementMap.Image = map;
+                    break;
+            }
+            listBox1.Items.Add($"X = {Int32.Parse(textBox1.Text)}; Y = {Int32.Parse(textBox1.Text)}");
+            listBox1.Items.Add("");
         }
 
         private void Apply_Click(object sender, EventArgs e)
@@ -63,9 +76,35 @@ namespace ProceduralWorldGeneator
         private void button5_Click(object sender, EventArgs e)
         {
             Addition addition = new Addition();
-            AlgGenerate algGenerate = new AlgGenerate();
-            map = addition.Add(map, algGenerate.Generate(Int32.Parse(textBox1.Text)));
+            AlgRandom algGenerate = new AlgRandom();
+            switch (algIndex)
+            {
+                case 0:
+                    map = addition.Add(map, algGenerate.Generate(Int32.Parse(textBox1.Text)));
+                    DisplacementMap.Image = map;
+                    break;
+                case 1:
+                    AlgPerlin perlin = new AlgPerlin();
+                    map = addition.AddPerlin(map, perlin.Generate(Int32.Parse(textBox1.Text), Int32.Parse(textBox1.Text)));
+                    DisplacementMap.Image = map;
+                    break;
+            }
+
+            listBox1.Items.Add($"X = {Int32.Parse(textBox1.Text)}; Y = {Int32.Parse(textBox1.Text)}");
+            listBox1.Items.Add("");
+
+
             DisplacementMap.Image = map;
+        }
+
+        private void SelectAlg_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            algIndex = (byte) SelectAlg.SelectedIndex;
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+
         }
     }
 }

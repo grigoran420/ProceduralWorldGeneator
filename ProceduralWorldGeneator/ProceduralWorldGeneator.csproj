@@ -63,7 +63,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Alg\Addition.cs" />
-    <Compile Include="Alg\algGenerate.cs" />
+    <Compile Include="Alg\AlgPerlin.cs" />
+    <Compile Include="Alg\AlgRandom.cs" />
     <Compile Include="Alg\Analis.cs" />
     <Compile Include="Alg\Coloring.cs" />
     <Compile Include="Alg\Smoothing.cs" />

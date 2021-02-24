@@ -3,12 +3,12 @@ using System.Drawing;
 
 namespace ProceduralWorldGeneator.Alg
 {
-    class AlgGenerate
+    class AlgRandom
     {
         private readonly Bitmap map;
         private readonly Random range;
         int A = 0;
-        public AlgGenerate()
+        public AlgRandom()
         {
             map = new Bitmap(800, 800);
             range = new Random();

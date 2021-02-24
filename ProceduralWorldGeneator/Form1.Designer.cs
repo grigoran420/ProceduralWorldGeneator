@@ -38,6 +38,7 @@ namespace ProceduralWorldGeneator
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.button5 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.SelectAlg = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.DisplacementMap)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,14 +109,13 @@ namespace ProceduralWorldGeneator
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(828, 288);
+            this.listBox1.Location = new System.Drawing.Point(828, 327);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(134, 524);
+            this.listBox1.Size = new System.Drawing.Size(134, 485);
             this.listBox1.TabIndex = 12;
             // 
             // button5
             // 
-            this.button5.Enabled = false;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button5.Location = new System.Drawing.Point(828, 256);
             this.button5.Name = "button5";
@@ -133,12 +133,26 @@ namespace ProceduralWorldGeneator
             this.textBox1.TabIndex = 14;
             this.textBox1.Text = "80";
             // 
+            // SelectAlg
+            // 
+            this.SelectAlg.FormattingEnabled = true;
+            this.SelectAlg.Items.AddRange(new object[] {
+            "Random (Low quality)",
+            "Perlin (High quality)"});
+            this.SelectAlg.Location = new System.Drawing.Point(831, 290);
+            this.SelectAlg.Name = "SelectAlg";
+            this.SelectAlg.Size = new System.Drawing.Size(131, 21);
+            this.SelectAlg.TabIndex = 15;
+            this.SelectAlg.Text = "Random (Low quality)";
+            this.SelectAlg.SelectedIndexChanged += new System.EventHandler(this.SelectAlg_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gray;
-            this.ClientSize = new System.Drawing.Size(975, 826);
+            this.ClientSize = new System.Drawing.Size(975, 858);
+            this.Controls.Add(this.SelectAlg);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.listBox1);
@@ -167,6 +181,7 @@ namespace ProceduralWorldGeneator
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox SelectAlg;
     }
 }
 
